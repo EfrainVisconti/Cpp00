@@ -6,7 +6,7 @@
 #    By: eviscont <eviscont@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/06 18:49:32 by eviscont          #+#    #+#              #
-#    Updated: 2024/10/06 18:49:35 by eviscont         ###   ########.fr        #
+#    Updated: 2024/10/07 16:04:44 by eviscont         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,9 @@ all: $(NAME)
 
 $(NAME): $(SRCS) $(HDRS)
 	c++ $(CFLAGS) $(SRCS) -o $(NAME)
+
+%.o:			%.cpp
+				$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 
