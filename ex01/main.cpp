@@ -6,7 +6,7 @@
 /*   By: eviscont <eviscont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:56:21 by eviscont          #+#    #+#             */
-/*   Updated: 2024/10/09 18:06:07 by eviscont         ###   ########.fr       */
+/*   Updated: 2024/10/10 15:50:15 by eviscont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,16 @@ int	main(void)
 			std::getline(std::cin, darkestSecret);
 			if (std::cin.eof())
 				break ;
+			phonebook.add_contact(firstName, lastName, nickName, phoneNumber, darkestSecret);
 		}
-
+		else if (input == "SEARCH")
+		{
+			phonebook.print_list();
+			std::cout << "Enter a valid index: ";
+			std::getline(std::cin, input);
+			if (std::cin.eof())
+				break ;
+			phonebook.print_contact(input);
+		}
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: eviscont <eviscont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 18:50:46 by eviscont          #+#    #+#             */
-/*   Updated: 2024/10/09 17:03:51 by eviscont         ###   ########.fr       */
+/*   Updated: 2024/10/10 15:22:48 by eviscont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ class Contact
 		void	init_info(int _index, std::string _firstName, std::string _lastName, \
 		std::string _nickName, std::string _phoneNumber, std::string _darkestSecret);
 		void	print_info(void);
+		void	print_row(void);
 };
 
 #endif

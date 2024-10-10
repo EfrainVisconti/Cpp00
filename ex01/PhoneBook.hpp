@@ -6,7 +6,7 @@
 /*   By: eviscont <eviscont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 18:50:07 by eviscont          #+#    #+#             */
-/*   Updated: 2024/10/09 18:14:17 by eviscont         ###   ########.fr       */
+/*   Updated: 2024/10/10 15:50:35 by eviscont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,10 @@ class PhoneBook
 
 	public:
 		PhoneBook();
-		bool	add_contact(std::string firstName, std::string lastName, \
+		void	add_contact(std::string firstName, std::string lastName, \
 		std::string nickName, std::string phoneNumber, std::string darkestSecret);
-		bool	print_contacts();
+		void	print_list();
+		void	print_contact(std::string input);
 };
 
 #endif
